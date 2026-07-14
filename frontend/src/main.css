@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-marquee: marquee 22s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --primary: #111827;
+  --secondary: #6b7280;
+
+  --border: #e5e7eb;
+
+  --container-width: 1280px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container-custom {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.page-padding {
+  padding-top: 7rem;
+}
+
+.glass-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(229, 231, 235, 0.7);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  margin-top: 0.75rem;
+  color: #6b7280;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.8rem 1.5rem;
+
+  border-radius: 9999px;
+
+  background: #111827;
+  color: white;
+
+  transition: all 0.2s ease;
+}
+
+.primary-button:hover {
+  opacity: 0.9;
+}
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.8rem 1.5rem;
+
+  border-radius: 9999px;
+
+  border: 1px solid #e5e7eb;
+}
+
+
+
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.8rem 1.5rem;
+
+  border-radius: 9999px;
+
+  background: #111827;
+  color: white;
+
+  transition: all 0.2s ease;
+}
+
+.primary-button:hover {
+  opacity: 0.9;
+}
